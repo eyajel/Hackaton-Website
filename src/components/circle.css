@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Proxima Nova Thin';
+    src: url('../fonts/Proxima Nova Thin.otf') format('otf'),
+}
+.circleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px solid #2ea3dd;
+  background-color: transparent;
+  text-align: center;
+  line-height: 100px;
+  width: 100px;
+  font-size: 4vw;
+  font-weight: bold;
+  font-family: 'Proxima Nova Thin';
+  letter-spacing: 0.3vw;
+  padding: 2.25vw;
+}
+
+.circleTitle {
+  font-size: 2.75vw;
+  font-family: 'Proxima Nova Thin';
+  margin-left: 2vw;
+}
+
+@media screen and (max-width : 800px){
+  .circle {
+    line-height: 60px;
+    width: 60px;
+  }
+  .circleTitle{
+    font-size:3.75vw ;
+    margin-left: 2.75vw;
+  }
+}
+
+@media screen and (max-width : 600px){
+  .circle {
+    line-height: 60px;
+    width: 60px;
+  }
+  .circleTitle{
+    font-size:3.75vw ;
+    margin-left: 2.75vw;
+  }
+}
+@media screen and (max-width : 480px){
+  .circle {
+    line-height: 60px;
+    width: 60px;
+  }
+  .circleTitle{
+    font-size:3.75vw ;
+    margin-left: 2.75vw;
+  }
+}

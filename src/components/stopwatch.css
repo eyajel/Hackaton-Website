@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/Proxima Nova Alt Bold.otf') format('otf'),
+}
+
+
+
+.stopWatch{
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+}
+.circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 100%;
+}
+
+
+.stopwatchtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.stopwatchtitle{
+    font-weight: bold;
+    font-size: 5vw;
+    font-family: 'Proxima Nova';
+    letter-spacing: 2px;
+}
+
+.littletitle{
+    padding-left: 14.3vw;
+    font-size: 1.6vw;
+    margin-top: -40px;
+    font-family: 'Proxima Nova';
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .stopwatchtitle {
+      font-size: 50px; 
+    }
+    .circles {
+        align-items: stretch;
+        padding: 20px; 
+        max-width: 100%;
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .circles {
+      align-items: stretch;
+      padding: 20px; 
+      margin-left: 10vh;
+      margin-right: 10vh;
+    }
+
+}
+
+  
+  @media screen and (max-width: 480px) {
+    .stopwatchtitle {
+      font-size: 32px; 
+    }
+    .littletitle{
+        font-size: 10px;
+        margin-left: 3.5vh;
+        margin-top: -25px;
+    }
+    .circles {
+        align-items: stretch;
+        padding: 20px; 
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+}
+
+

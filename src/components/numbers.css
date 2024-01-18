@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/Proxima Nova Alt Bold.otf') format('otf'),
+}
+
+
+.numbersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 500px;
+
+}
+
+.numbersTitle{
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    font-size: 5vw;
+    letter-spacing: 2px;
+
+}
+
+.numberElement{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    gap: 9vh;
+
+}
+
+.myelement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.groupIcon , .trophyIcon , .handIcon{
+    line-height: 100px;
+    width: 9vw;
+    font-size: 9vw;
+    padding: 3vw;
+    margin-bottom: -2vw;
+
+
+}
+.clockIcon{
+    line-height: 100px;
+    width: 9vw;
+    font-size: 7.3vw;
+    padding: 3vw;
+    margin-bottom: -2vw;
+
+}
+
+.groupText1,.clockText1,.trophyText1,.handText1{
+
+    font-size: 3vw;
+    font-family: 'Proxima Nova';
+
+}
+
+.groupText2,.clockText2,.trophyText2,.handText2{
+
+    font-size: 2.5vw;
+    font-family: 'Proxima Nova';
+}
+@media screen and (max-width: 800px) {
+    .numbersTitle{
+      font-size: 50px; 
+    }
+}
+
+@media screen and (max-width : 600px ){
+    .numberElement{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10vh;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        border-top: 1px solid rgba(224, 222, 210, 0.3);
+        border-bottom: 1px solid rgba(224, 222, 210, 0.3);
+        padding-bottom: 4vh;
+
+    }
+    .text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        gap: 2vh;
+        padding:2px;
+    
+    }
+    
+    .numberElement::before,
+    .numberElement::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(224, 222, 210, 0.3);
+    }
+
+    .numberElement::before {
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        left: calc(50% - 1px);
+    }
+
+  .numberElement::after {
+        left: 0;
+        right: 0;
+        height: 1px;
+        top: calc(50% - 1px);
+    }
+    .clockIcon,.handIcon,.groupIcon,.trophyIcon{
+        font-size: 20vw;
+        margin-right: 10vh;
+    }
+    .clockText1,.handText1,.groupText1,.trophyText1{
+        font-size: 4.2vw;
+    }
+    .clockText2,.handText2,.groupText2,.trophyText2{
+        font-size: 4.2vw;
+        margin-right: 2vh;
+    }
+    
+
+
+
+}
+@media screen and (max-width: 480px) {
+    .numbersTitle {
+      font-size: 32px; 
+    }
+}
